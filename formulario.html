@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulario exemplo</title>
+  </head>
+
+  <body>
+
+    <p>
+    <font size="5">
+    Formulario
+    </font>
+    </p>
+
+    <form>
+
+      <fieldset>
+      <legend>Dados pessoais</legend>
+      <p>
+        <label for="nome">Nome: </label>
+        <input type="text" name="nome" required>
+      </p>
+      <p>
+        <label for="CPF">CPF: </label>
+        <input type="text" name="CPF" maxlength="11" required placeholder="12345678900">
+        <small>Não coloque símbolos (./-), apenas números
+      </p>
+      <p>
+        <label for="datanascimento">Data de nascimento: </label>
+        <input type="date" name="datanascimento">
+      </p>
+      <p>
+        <label for="endereco">Endereço: </label>
+        <input type="text" name="endereco" required>
+      </p>
+      <p>
+        <label for="cidade">Cidade: </label>
+        <input type="text" name="cidade">
+      </p>
+      <p>
+        <label for="estado">Estado: </label>
+        <select id="estado" name="estado" required>
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+        <option value="EX">Estrangeiro</option>
+        </select>
+      </p>
+      </fieldset>
+  <p>
+      <fieldset>
+        <legend>Dados profissionais</legend>
+        <p>
+          <label for="cargo">Cargo: </label>
+          <p>
+          <input type="radio" name="cargo" value="Estudante">Estudante
+          <input type="radio" name="cargo" value="Medicina">Medicina
+          <input type="radio" name="cargo" value="Engenharia">Engenharia
+          <input type="radio" name="cargo" value="Informática">Informática
+          <input type="radio" name="cargo" value="Direito">Direito
+          <input type="radio" name="cargo" value="Arquitetura">Arquitetura
+          <input type="radio" name="cargo" value="Professor">Professor(a)
+          <input type="radio" name="cargo" value="Outro"><input type="text" value="Outro" required>
+        </p>
+        <label for="formação">Formação completa:</label>
+        <p>
+        <input type="checkbox" name="formação" value="Ensino Médio">Ensino Médio
+        <input type="checkbox" name="formação" value="Bacharelado">Bacharelado
+        <input type="checkbox" name="formação" value="Licenciatura">Licenciatura
+        <input type="checkbox" name="formação" value="Pós-Graduação">Pós-Graduação
+        <input type="checkbox" name="formação" value="Mestrado">Mestrado
+        <input type="checkbox" name="formação" value="Doutorado">Doutorado
+        </p>
+      </fieldset>
+
+      <p>
+
+        Mini-curriculo:
+        <textarea name="name" rows="8" cols="80" required placeholder="Faça uma breve apresentação sobre você! Compartilhe suas conquistas, ambições e experiências."></textarea>
+        <p>
+        <span class="button">
+        <button type="submit">Enviar o formulário</button>
+        <span class="button">
+        <button type="reset">Limpar</button>
+        </span>
+  </body>
+</html>
